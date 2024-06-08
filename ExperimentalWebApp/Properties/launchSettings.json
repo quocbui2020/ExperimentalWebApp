@@ -9,20 +9,38 @@
     }
   },
   "profiles": {
-    "http": {
+    "ExperimentalWebApp": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5119",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      }
+    },
+    "ExperimentalWebApp-Development": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5119",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development" //ASPNETCORE_ENVIRONMENT field have the `Value`, it will automatically look up into the file content of `appSettings.Value.json`
+      }
+    },
+    "ExperimentalWebApp-Production": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5119",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
     "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7295;http://localhost:5119",
+      "applicationUrl": "http://localhost:7295;http://localhost:5119",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
